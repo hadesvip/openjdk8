@@ -84,8 +84,8 @@ AC_DEFUN_ONCE([LIB_SETUP_INIT],
   BASIC_DEPRECATED_ARG_ENABLE(macosx-runtime-support, macosx_runtime_support)
 
   AC_MSG_CHECKING([for Mac OS X Java Framework])
-  if test -f /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JavaRuntimeSupport.h; then
-    AC_MSG_RESULT([/System/Library/Frameworks/JavaVM.framework])
+  if test -f /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/JavaVM.framework//Frameworks/JavaRuntimeSupport.framework/Headers/JavaRuntimeSupport.h; then
+    AC_MSG_RESULT([/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/JavaVM.framework/])
   else
     AC_MSG_RESULT([no])
   fi

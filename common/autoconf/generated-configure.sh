@@ -20053,13 +20053,13 @@ $as_echo "$as_me: The result from running with -V was: \"$COMPILER_VERSION_TEST\
     COMPILER_VERSION_TEST=`$COMPILER --version 2>&1 | $HEAD -n 1`
     # Check that this is likely to be GCC.
     $COMPILER --version 2>&1 | $GREP "Free Software Foundation" > /dev/null
-    if test $? -ne 0; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: The $COMPILER_NAME compiler (located as $COMPILER) does not seem to be the required GCC compiler." >&5
-$as_echo "$as_me: The $COMPILER_NAME compiler (located as $COMPILER) does not seem to be the required GCC compiler." >&6;}
-      { $as_echo "$as_me:${as_lineno-$LINENO}: The result from running with --version was: \"$COMPILER_VERSION_TEST\"" >&5
-$as_echo "$as_me: The result from running with --version was: \"$COMPILER_VERSION_TEST\"" >&6;}
-      as_fn_error $? "GCC compiler is required. Try setting --with-tools-dir." "$LINENO" 5
-    fi
+#    if test $? -ne 0; then
+#      { $as_echo "$as_me:${as_lineno-$LINENO}: The $COMPILER_NAME compiler (located as $COMPILER) does not seem to be the required GCC compiler." >&5
+#$as_echo "$as_me: The $COMPILER_NAME compiler (located as $COMPILER) does not seem to be the required GCC compiler." >&6;}
+#      { $as_echo "$as_me:${as_lineno-$LINENO}: The result from running with --version was: \"$COMPILER_VERSION_TEST\"" >&5
+#$as_echo "$as_me: The result from running with --version was: \"$COMPILER_VERSION_TEST\"" >&6;}
+#      as_fn_error $? "GCC compiler is required. Try setting --with-tools-dir." "$LINENO" 5
+#    fi
 
     # First line typically looks something like:
     # gcc (Ubuntu/Linaro 4.5.2-8ubuntu4) 4.5.2
@@ -21632,13 +21632,13 @@ $as_echo "$as_me: The result from running with -V was: \"$COMPILER_VERSION_TEST\
     COMPILER_VERSION_TEST=`$COMPILER --version 2>&1 | $HEAD -n 1`
     # Check that this is likely to be GCC.
     $COMPILER --version 2>&1 | $GREP "Free Software Foundation" > /dev/null
-    if test $? -ne 0; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: The $COMPILER_NAME compiler (located as $COMPILER) does not seem to be the required GCC compiler." >&5
-$as_echo "$as_me: The $COMPILER_NAME compiler (located as $COMPILER) does not seem to be the required GCC compiler." >&6;}
-      { $as_echo "$as_me:${as_lineno-$LINENO}: The result from running with --version was: \"$COMPILER_VERSION_TEST\"" >&5
-$as_echo "$as_me: The result from running with --version was: \"$COMPILER_VERSION_TEST\"" >&6;}
-      as_fn_error $? "GCC compiler is required. Try setting --with-tools-dir." "$LINENO" 5
-    fi
+#    if test $? -ne 0; then
+#      { $as_echo "$as_me:${as_lineno-$LINENO}: The $COMPILER_NAME compiler (located as $COMPILER) does not seem to be the required GCC compiler." >&5
+#$as_echo "$as_me: The $COMPILER_NAME compiler (located as $COMPILER) does not seem to be the required GCC compiler." >&6;}
+#      { $as_echo "$as_me:${as_lineno-$LINENO}: The result from running with --version was: \"$COMPILER_VERSION_TEST\"" >&5
+#$as_echo "$as_me: The result from running with --version was: \"$COMPILER_VERSION_TEST\"" >&6;}
+#      as_fn_error $? "GCC compiler is required. Try setting --with-tools-dir." "$LINENO" 5
+#    fi
 
     # First line typically looks something like:
     # gcc (Ubuntu/Linaro 4.5.2-8ubuntu4) 4.5.2
@@ -30086,9 +30086,9 @@ $as_echo "$as_me: WARNING: Option --enable-macosx-runtime-support is deprecated 
 
   { $as_echo "$as_me:${as_lineno-$LINENO}: checking for Mac OS X Java Framework" >&5
 $as_echo_n "checking for Mac OS X Java Framework... " >&6; }
-  if test -f /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JavaRuntimeSupport.h; then
-    { $as_echo "$as_me:${as_lineno-$LINENO}: result: /System/Library/Frameworks/JavaVM.framework" >&5
-$as_echo "/System/Library/Frameworks/JavaVM.framework" >&6; }
+  if test -f /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/JavaVM.framework//Frameworks/JavaRuntimeSupport.framework/Headers/JavaRuntimeSupport.h; then
+    { $as_echo "$as_me:${as_lineno-$LINENO}: result: /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/JavaVM.framework/" >&5
+$as_echo "/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/JavaVM.framework/" >&6; }
   else
     { $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
 $as_echo "no" >&6; }
